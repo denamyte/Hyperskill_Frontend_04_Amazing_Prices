@@ -482,6 +482,65 @@ files:
           await new Test().runTests()
       }).timeout(30000);
     learner_created: false
+  - name: src/assets/style.css
+    visible: true
+    text: |
+      body {
+          font-family: sans-serif;
+      }
+      
+      a {
+          color: #274867;
+          text-decoration: none;
+          font-size: 16px;
+          border: 1px dotted violet;
+      }
+      
+      header, footer {
+          height: 3.5em;
+      }
+      
+      header, footer, nav {
+          display: flex;
+      }
+      
+      nav a, footer a {
+          margin: 0 15px;
+      }
+      
+      header > a:first-child, footer a:first-child {
+          margin: 0 30px;
+      }
+      
+      header > a:first-child, footer > a:first-child {
+          font-weight: bold;
+      }
+      
+      footer a:last-child, nav a:last-child {
+          margin-right: 25px;
+      }
+      
+      header, footer {
+          justify-content: space-between;
+          align-items: center;
+      }
+      
+      header {
+          border-bottom: 1px solid rgba(1, 124, 255, .5);
+      }
+      
+      main {
+          background-color: #E5F2FF;
+          height: 50vw;
+      }
+      
+      footer {
+          border-top: 1px solid rgba(1, 124, 255, .5);
+      }
+    learner_created: true
 feedback_link: https://hyperskill.org/learn/step/24336#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 23 Nov 2023 21:45:20 UTC"
 record: -1

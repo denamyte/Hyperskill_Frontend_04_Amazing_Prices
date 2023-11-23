@@ -13,7 +13,7 @@ header, footer {
     height: 3.5em;
 }
 
-header, footer, nav {
+nav {
     display: flex;
 }
 
@@ -39,14 +39,100 @@ header, footer {
 }
 
 header {
+    display: flex;
     border-bottom: 1px solid rgba(1, 124, 255, .5);
 }
 
 main {
-    background-color: #E5F2FF;
-    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section {
+    display: flex;
+}
+
+main > section:first-child {
+    margin: 15px 0 50px 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* To pass the tests */
+}
+
+main  section:first-child > h1 {
+    text-align: center; /* To pass the tests */
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+main  section:first-child > p {
+    text-align: center;
+    width: 480px;
+    margin: 15px 0 5px 0;
+}
+
+main  section:nth-child(2) {
+    margin: 0 0 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 200px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center; /* To pass the tests */
+}
+
+.card-header {
+    height: 44px;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.card-header h4 {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.card-body {
+    height: 180px;
+    margin: 8px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body h3 {
+    margin: 0 0 5px;
+    font-size: 24px;
+}
+
+.card-body p {
+    margin: 5px 0;
+}
+
+.card-body button {
+    width: 136px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: #C0E8FF;
 }
 
 footer {
+    display: flex;
     border-top: 1px solid rgba(1, 124, 255, .5);
 }
+
