@@ -51,33 +51,69 @@ main {
 
 main section {
     display: flex;
+    margin: 15px 0 50px 0;
 }
 
 main > section:first-child {
-    margin: 15px 0 50px 0;
     flex-direction: column;
     align-items: center;
     text-align: center; /* To pass the tests */
 }
 
-main  section:first-child > h1 {
+main section:first-child > h1 {
     text-align: center; /* To pass the tests */
     font-size: 48px;
     font-weight: bold;
     margin: 10px 0 0;
 }
 
-main  section:first-child > p {
+main section:first-child > p {
     text-align: center;
     width: 480px;
     margin: 15px 0 5px 0;
 }
 
-main  section:nth-child(2) {
-    margin: 0 0 50px;
+main section:nth-child(2) {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+}
+
+main section:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+main section:nth-child(3) h2 {
+    font-size: 32px;
+    margin: 0 0 50px;
+    text-align: center; /* To pass the tests */
+}
+
+main section:nth-child(3) table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 12px;
+    width: 50%;
+}
+
+main section:nth-child(3) td,
+main section:nth-child(3) th {
+    border: 1px solid #B9B9B9;
+    height: 36px;
+    padding-left: 12px;
+}
+
+main section:nth-child(3) th {
+    font-weight: normal;
+    text-align: left;
+}
+
+main section:nth-child(3) table tr:first-child th {
+    background-color: rgba(0, 0, 0, 6%);
+    font-weight: 600;
 }
 
 .card {
