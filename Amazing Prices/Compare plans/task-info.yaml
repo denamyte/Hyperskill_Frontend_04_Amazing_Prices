@@ -558,6 +558,148 @@ files:
           await new Test().runTests()
       }).timeout(30000);
     learner_created: false
+  - name: src/assets/style.css
+    visible: true
+    text: |+
+      body {
+          font-family: sans-serif;
+      }
+      
+      a {
+          color: #274867;
+          text-decoration: none;
+          font-size: 16px;
+          border: 1px dotted violet;
+      }
+      
+      header, footer {
+          height: 3.5em;
+      }
+      
+      nav {
+          display: flex;
+      }
+      
+      nav a, footer a {
+          margin: 0 15px;
+      }
+      
+      header > a:first-child, footer a:first-child {
+          margin: 0 30px;
+      }
+      
+      header > a:first-child, footer > a:first-child {
+          font-weight: bold;
+      }
+      
+      footer a:last-child, nav a:last-child {
+          margin-right: 25px;
+      }
+      
+      header, footer {
+          justify-content: space-between;
+          align-items: center;
+      }
+      
+      header {
+          display: flex;
+          border-bottom: 1px solid rgba(1, 124, 255, .5);
+      }
+      
+      main {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      
+      main section {
+          display: flex;
+      }
+      
+      main > section:first-child {
+          margin: 15px 0 50px 0;
+          flex-direction: column;
+          align-items: center;
+          text-align: center; /* To pass the tests */
+      }
+      
+      main  section:first-child > h1 {
+          text-align: center; /* To pass the tests */
+          font-size: 48px;
+          font-weight: bold;
+          margin: 10px 0 0;
+      }
+      
+      main  section:first-child > p {
+          text-align: center;
+          width: 480px;
+          margin: 15px 0 5px 0;
+      }
+      
+      main  section:nth-child(2) {
+          margin: 0 0 50px;
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+      }
+      
+      .card {
+          width: 200px;
+          height: 250px;
+          border: 1px solid black;
+          border-radius: 10px;
+          background-color: #F5F5F5;
+      
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      
+          text-align: center; /* To pass the tests */
+      }
+      
+      .card-header {
+          height: 44px;
+          border-bottom: 1px solid black;
+          width: 100%;
+      }
+      
+      .card-header h4 {
+          margin: 5px 0;
+          text-align: center;
+      }
+      
+      .card-body {
+          height: 180px;
+          margin: 8px auto;
+      
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      
+      .card-body h3 {
+          margin: 0 0 5px;
+          font-size: 24px;
+      }
+      
+      .card-body p {
+          margin: 5px 0;
+      }
+      
+      .card-body button {
+          width: 136px;
+          height: 35px;
+          border-radius: 10px;
+          border: none;
+          background-color: #C0E8FF;
+      }
+      
+      footer {
+          display: flex;
+          border-top: 1px solid rgba(1, 124, 255, .5);
+      }
+    
+    learner_created: true
 feedback_link: https://hyperskill.org/learn/step/24337#comment
 status: Unchecked
 record: -1
