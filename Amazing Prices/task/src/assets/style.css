@@ -9,23 +9,17 @@ a {
     border: 1px dotted violet;
 }
 
-header, footer {
-    height: 3.5em;
-}
-
 nav {
     display: flex;
-}
-
-nav a, footer a {
-    margin: 0 15px;
+    width: 60%;
+    justify-content: space-between;
 }
 
 header > a:first-child, footer a:first-child {
-    margin: 0 30px;
+    margin: 20px;
 }
 
-header > a:first-child, footer > a:first-child {
+a {
     font-weight: bold;
 }
 
@@ -63,13 +57,12 @@ main > section:first-child {
 main section:first-child > h1 {
     text-align: center; /* To pass the tests */
     font-size: 48px;
-    font-weight: bold;
     margin: 10px 0 0;
 }
 
 main section:first-child > p {
     text-align: center;
-    width: 480px;
+    width: 60%;
     margin: 15px 0 5px 0;
 }
 
